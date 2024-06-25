@@ -1,7 +1,5 @@
-# main.py
-
 from account_manager import add_account, list_accounts, update_account, delete_account
-from mongodb_utils import close_connection  # Import close_connection function
+from mongodb_utils import close_connection  
 
 
 def main():
@@ -35,7 +33,7 @@ def main():
                 print("Invalid choice")
 
     finally:
-        close_connection()  # Close MongoDB connection when exiting
+        close_connection()  
 
 
 if __name__ == "__main__":
