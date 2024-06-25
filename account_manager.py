@@ -1,5 +1,3 @@
-# account_manager.py
-
 from bson import ObjectId
 from mongodb_utils import get_account_collection
 
