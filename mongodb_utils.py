@@ -1,12 +1,10 @@
 from pymongo import MongoClient
 
-# MongoDB's connection setup for local instance
-client = MongoClient("mongodb://localhost:27017/")  # Replace with your local MongoDB URI
 
-# Specify the database name
-db = client["bank"]  # Replace with your database name
+client = MongoClient("mongodb://localhost:27017/")  
 
-# Specify the collection name
+db = client["bank"] 
+
 account_collection = db["accounts"]
 
 
